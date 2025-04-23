@@ -1,0 +1,39 @@
+**I. Prerequisites: Core Knowledge**
+
+* **Java:**  Strong foundation in Java is crucial.  The speaker emphasizes knowledge of syntax (loops, conditionals, arrays), exception handling, collections, and OOP concepts (including interfaces and abstraction).  Threads are mentioned as beneficial but not strictly essential.
+
+* **Build Tool:**  Maven is recommended for this course.  Familiarity with Gradle is helpful but not required; Maven will be taught.
+
+* **Database Connectivity:** Basic understanding of JDBC is advantageous for comprehending database interactions within the Spring application.
+
+* **Hibernate:** Knowledge of Hibernate is necessary to fully grasp Spring Data JPA, which will be used in the course.  The course won't cover the inner workings of Hibernate itself.
+
+* **XML & JSON:** Familiarity with XML (for configuration) and JSON (for data exchange) is beneficial.
+
+**II.  Prerequisite Learning Resources:**
+
+* The speaker assures viewers that resources for learning the prerequisites (Java, Maven, Hibernate, JSON, XML) are provided in the video description.  A complete Java course covering these topics (except Spring 6; it covers Spring 5) is linked.  Separate links for JSON and XML tutorials are also included.
+
+
+**III. Required Software and Tools:**
+
+* **JDK (Java Development Kit):** Version 17 or higher is recommended (JDK 21 is used by the speaker).  LTS (Long Term Support) versions are preferred.
+
+* **IDE (Integrated Development Environment):**  Several options are presented:
+    * **VS Code:**  Good, but not yet fully optimized for Java. Still usable.
+    * **Eclipse:**  Open-source, free, and considered one of the best IDEs for Java development. The speaker recommends the Enterprise version.
+    * **IntelliJ IDEA:**  Excellent IDE with a free Community Edition and a paid Ultimate Edition. The speaker suggests exploring the Ultimate Edition for its advanced features, especially considering the student discounts.  The course will use the Community Edition.
+
+
+**IV.  Course Specifics:**
+
+* **Spring Framework Version:**  The course will cover Spring 6.
+
+* **Project Structure:** The project structure will be consistent regardless of the chosen IDE (VS Code, Eclipse, IntelliJ IDEA).
+
+* **Focus:**  The course will not delve into the internal workings of Hibernate. The course is not about JSON and XML in detail.  Instead, it will show how they are used in the context of the application.
+
+
+**V. Summary:**
+
+The video outlines the essential prerequisites for a Spring Framework course, emphasizing the importance of a solid Java foundation and familiarity with related technologies.  It provides clear guidance on software choices and learning resources to help students prepare adequately.
