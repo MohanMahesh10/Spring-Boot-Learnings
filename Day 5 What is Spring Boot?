@@ -1,0 +1,41 @@
+Key Takeaways: Spring Boot Overview
+Purpose: Spring Boot simplifies Spring application development by minimizing configuration and setup.
+
+Problem Solved: Traditional Spring requires extensive configuration and server setup (like Tomcat), which can be slow and complex.
+
+Solution: Spring Boot offers:
+
+Auto-configuration
+
+Embedded servers (e.g., Tomcat)
+
+Faster development cycle
+
+Tool Highlight:
+
+start.spring.io is a quick way to bootstrap a Spring Boot project.
+
+Generates a pre-configured project with dependencies like Spring Web, Jackson, and embedded Tomcat.
+
+Hello World Demo:
+
+Created a simple REST controller with @RestController and @GetMapping.
+
+Ran the app directly using the embedded Tomcat server (default port 8080).
+
+Advantages:
+
+Rapid setup and execution.
+
+Simplifies Java backend development.
+
+Great for prototyping and small projects.
+
+Disadvantages:
+
+Opinionated defaults may include unnecessary dependencies.
+
+Customization beyond the defaults can be more complex.
+
+Conclusion: Spring Boot builds on Spring Framework to streamline app creation. Best for developers who value speed and simplicity over fine-grained control.
+
