@@ -1,0 +1,34 @@
+🔑 Key Takeaways
+Goal of the Video:
+Demonstrate how dependency injection works in Spring Boot through a basic project setup.
+
+⚙️ Project Setup
+Created a minimal Spring Boot project using Spring Initializr with no dependencies.
+
+Used Java 21, Maven, and JAR packaging.
+
+Opened the project in IntelliJ IDEA.
+
+🧠 Understanding Spring’s Role
+Spring IoC Container: Manages object creation and lifecycle.
+
+SpringApplication.run(): Bootstraps the application and returns an ApplicationContext (the container).
+
+🆚 Manual vs. Spring-Managed Object Creation
+Manual:
+Creating objects using new Dev() → Not managed by Spring.
+
+Spring-Managed:
+Use context.getBean(Dev.class) to retrieve a Spring-managed object (bean).
+
+🧩 How to Enable Dependency Injection
+Add @Component to the class (e.g., Dev) to register it as a Spring Bean.
+
+Now Spring creates and manages it, making it injectable.
+
+🛠️ Core Spring Boot DI Concepts
+@Component → Marks a class to be managed by Spring.
+
+ApplicationContext → Interface representing the Spring container.
+
+getBean(Class) → Retrieves a bean from the container.
