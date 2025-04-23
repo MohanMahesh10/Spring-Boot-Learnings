@@ -1,0 +1,56 @@
+I. Project Overview
+Goal
+To build a simple e-commerce website using the Spring Framework.
+
+Not intended to be a full-scale e-commerce solution like Amazon.
+
+Focus is on core backend features, demonstrating practical Spring concepts through a real-world application.
+
+Planned Functionality
+The project will implement essential features such as:
+
+Viewing products: Users can see a list of available products, including:
+
+Images
+
+Descriptions
+
+Prices
+
+Viewing product details: Clicking a product shows more info.
+
+Updating product descriptions.
+
+Deleting products.
+
+Sorting products by category.
+
+Adding products to a cart (implied, mentioned subtly).
+
+Searching products: Mentioned as a future enhancement, not in the initial scope.
+
+Technology Stack
+Backend: Built with the Spring Framework.
+
+Frontend: Basic UI using React (present, but not the focus).
+
+REST clients (like Postman) are welcomed as frontend alternatives for testing APIs.
+
+Development Approach
+The application will be built in incremental stages.
+
+Each video/tutorial introduces a new Spring concept and directly applies it to the project.
+
+Emphasis is on hands-on learning, rather than theoretical discussion.
+
+II. Project Visuals and UI
+UI Mockup
+A basic mockup of the product listing and details page is shown.
+
+Intended to give viewers an idea of how the site might look.
+
+UI design is kept intentionally simple to keep focus on backend development.
+
+Call for Design Contributions
+Presenter invites UI/UX designers or frontend developers in the audience to contribute.
+
