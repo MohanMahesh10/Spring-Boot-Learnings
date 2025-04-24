@@ -1,0 +1,64 @@
+1. Understanding the Problem: Manual Dependency Handling
+Manually creating objects (e.g., Laptop inside Developer) leads to:
+
+Tight coupling
+
+Poor scalability and maintainability
+
+Risk of NullPointerException if dependencies are not properly instantiated.
+
+2. Spring Boot Solution: Autowiring
+Spring Boot manages object creation and injection using IoC (Inversion of Control).
+
+✅ @Component
+Marks a class as a Spring-managed bean.
+
+Enables Spring to automatically detect and instantiate it during component scanning.
+
+✅ @Autowired
+Tells Spring to inject the required dependency automatically.
+
+Can be used in different ways (field, constructor, setter).
+
+3. Types of Dependency Injection
+
+Type	Description	Notes
+Field Injection	@Autowired directly on the field	Least preferred (less testable, harder to mock)
+Constructor Injection	Dependency passed via constructor, Spring autowires it	✅ Preferred (better for immutability & testing)
+Setter Injection	Uses setter method with @Autowired	Preferred over field; allows partial injection
+4. Interface-Based Programming & Loose Coupling
+Introduce an interface (e.g., Computer) for the dependency.
+
+Allows swapping implementations (e.g., Laptop, Desktop) without changing the dependent class (Developer).
+
+Promotes flexibility and unit testing.
+
+5. Handling Multiple Implementations (Ambiguity)
+When more than one bean of the same type/interface is present:
+
+❌ Spring throws an error:
+expected single matching bean but found 2
+
+✅ Solutions:
+
+Method	Description
+Remove @Component from one implementation	Only one bean remains
+@Primary	Marks a default/preferred bean for autowiring
+@Qualifier("beanName")	Explicitly specifies which bean to inject (bean name is usually class name with lowercase first letter, e.g., laptop)
+6. Best Practices
+Prefer constructor injection.
+
+Use interfaces for loose coupling.
+
+Use @Primary or @Qualifier to handle multiple beans.
+
+Avoid field injection unless absolutely necessary.
+
+7. Behind the Scenes
+Spring uses Reflection and BeanFactory/ApplicationContext to:
+
+Create beans
+
+Inject dependencies at runtime
+
+This reduces boilerplate and improves code testability and flexibility.
