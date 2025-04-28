@@ -1,0 +1,55 @@
+Spring Framework Configuration without Spring Boot
+I. Introduction
+Goal: Build a Spring app manually using XML configuration, not Spring Boot.
+
+Problem Faced: "Premature end of file" error — caused by an empty spring.xml.
+
+Why XML Configuration:
+
+For legacy project compatibility.
+
+To understand Spring Boot’s hidden auto-configuration processes.
+
+II. XML Configuration Basics
+Spring Beans: Objects managed by Spring are called beans.
+
+XML Structure:
+
+Similar to HTML but requires defined structure through DTD or Schema.
+
+Important XML Tags:
+
+<beans>: Root element that holds all bean definitions.
+
+<bean>: Defines a single bean with:
+
+class (required): Fully qualified class name.
+
+id (optional but useful): Unique name for referencing the bean.
+
+III. First Bean Configuration
+New Error: "Cannot find Declaration of element beans" — because of missing XML schema declaration.
+
+Solution: Add schema declaration (namespace) at the top of spring.xml.
+
+Result: Spring container successfully creates and manages the Dev bean.
+
+IV. Managing Multiple Beans
+New Class: Created a Laptop class with a constructor and method.
+
+Object Creation Test:
+
+Only beans explicitly declared in XML are created.
+
+Verified by adding print statements inside constructors.
+
+Adding More Beans:
+
+After defining a Laptop bean, both Dev and Laptop instances are created.
+
+Duplicate Bean Definitions:
+
+Defining the Dev class twice with different IDs creates two separate objects.
+
+V. Dependency Injection Preview
+Teaser: Next tutorial will show how to inject a Laptop object into the Dev class (introduction to dependency injection).
