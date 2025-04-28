@@ -1,0 +1,63 @@
+Spring Framework vs. Spring Boot
+I. Introduction & Motivation
+Goal: Teach how to build a Spring app without Spring Boot, showing manual configurations.
+
+Why:
+
+Some projects can’t or don’t use Spring Boot.
+
+To understand Spring’s internal mechanisms (e.g., dependency injection, bean management).
+
+Project Example: Simple classes (Developer, Desktop, Laptop) to demonstrate dependency injection.
+
+II. Setting Up a Maven Project
+Project Creation: Standard Maven project (not a Spring Boot project) using IntelliJ IDEA.
+
+Maven Archetypes: Selected maven-archetype-quickstart for simplicity.
+
+Project Setup: Defined Group ID, Artifact ID, and JDK version.
+
+III. Adding Spring Dependencies
+Missing Dependency: The project initially lacks Spring support.
+
+Dependency Addition: Added spring-context (org.springframework:spring-context) to pom.xml.
+
+Version Selection: Considered security and popularity.
+
+Maven Changes: Demonstrated how to reload Maven projects.
+
+IV. Writing and Running Initial Code
+Simple Java Class: Used a basic Dev class with a build() method.
+
+Without Spring: Instantiated Dev manually using new Dev(), method runs fine.
+
+Failed Annotation Use: @Component annotation alone doesn’t work — needs Spring container.
+
+V. Introducing the Spring Container
+Spring IoC Concept: Introduced the Inversion of Control (IoC) container.
+
+Application Context: Used ApplicationContext and specifically ClassPathXmlApplicationContext.
+
+Bean Retrieval: Tried using getBean() but failed because no beans were configured yet.
+
+VI. XML Configuration (Setup Only)
+XML Config Need: Explained necessity of spring.xml for bean definitions.
+
+Resource Placement: File should go in the resources directory.
+
+Errors Covered:
+
+Missing XML file error.
+
+Premature end-of-file error with an empty XML.
+
+Next Steps: Promised to continue with actual bean setup in the next video.
+
+VII. Overall Takeaways
+Spring Boot vs. Spring Framework:
+
+Spring Boot simplifies configuration.
+
+Manual setup with the Spring Framework requires understanding core concepts like dependency injection, XML config, and the ApplicationContext.
+
+Educational Value: Good foundation for appreciating Spring Boot’s automation by understanding the manual process.
