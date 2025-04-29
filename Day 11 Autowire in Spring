@@ -1,0 +1,52 @@
+Spring Framework Autowiring (without Spring Boot):
+
+I. Introduction & Setup
+
+Goal: Explain Spring autowiring using XML configuration.
+
+Adds a Computer interface and Desktop class; Laptop also implements Computer.
+
+Developer class is refactored to depend on Computer, not Laptop.
+
+II. XML Configuration & Injection
+
+Refactoring breaks previous XML config due to constructor changes.
+
+XML is updated to inject Computer using <property ref="labOne"/>.
+
+Adds a second bean deskOne to demonstrate switching implementations.
+
+Highlights potential issues when bean IDs match property names.
+
+III. Autowiring
+
+Introduces autowiring to simplify manual XML wiring.
+
+autowire="byName" injects based on matching bean ID and property name.
+
+autowire="byType" injects based on matching class type.
+
+Conflicts arise with multiple matching beans; resolved using primary="true".
+
+IV. Bean Retrieval
+
+Shows using getBean(Class.class) instead of getBean("id") for simpler access.
+
+V. Summary & Direction
+
+Recaps benefits and limitations of autowiring.
+
+Announces move to annotation-based Spring Boot in future content.
+
+Key Concepts
+
+Interface-based programming for loose coupling
+
+XML-based DI configuration
+
+Autowiring mechanisms: byName, byType, and primary
+
+Bean lifecycle and dependency management
+
+Ambiguity resolution in multi-bean environments
+
