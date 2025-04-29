@@ -1,0 +1,44 @@
+ Spring Framework Dependency Injection (without Spring Boot):
+
+🔧 Project Setup
+Java project with Dev and Laptop classes.
+
+Dependency injection configured using spring.xml.
+
+Uses the Spring IoC container to manage object creation and wiring via XML.
+
+🧩 Dependency Injection Types
+✅ Primitive Type Injection
+Setter Injection:
+
+Use <property name="age" value="25"/> in XML.
+
+Requires getter/setter in Dev class.
+
+Constructor Injection:
+
+Use <constructor-arg value="25"/> in XML.
+
+Requires a constructor with parameters in Dev.
+
+✅ Reference Type Injection (Object Injection)
+Setter Injection:
+
+Use <property name="laptop" ref="lap1"/>.
+
+Laptop must be a defined Spring bean.
+
+Constructor Injection:
+
+Use <constructor-arg ref="lap1"/>.
+
+Used when Laptop is a required dependency.
+
+📌 Key Takeaways
+Use constructor injection for required dependencies, setter injection for optional ones.
+
+XML config uses <property> and <constructor-arg> for DI.
+
+Spring handles object wiring, improving modularity and testability.
+
+Emphasizes avoiding NullPointerException by proper injection.
